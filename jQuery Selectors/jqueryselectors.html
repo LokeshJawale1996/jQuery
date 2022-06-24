@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").hide();
+        });
+      });
+    </script> -->
+    <script>
+      $("#id-select").ready(function () {
+        $("#id-btn").click(function () {
+          $(".test").hide();
+        });
+      });
+    </script>
+    <title>JQuery Selectors</title>
+  </head>
+  <body>
+    <!-- <h2>element selectors</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button>Click me to hide paragraphs</button> -->
+
+    <div id="id-select">
+      <h2>Concept -id selector & class selector</h2>
+      <p>This is a paragraph 1</p>
+      <p class="test">This is a paragraph 2</p>
+      <p class="test">This is paragraph 3</p>
+      <button id="id-btn">Click me</button>
+    </div>
+    <!-- Syntax	Description	Example
+
+$("*")	Selects all elements	
+
+$(this)	Selects the current HTML element	
+
+$("p.intro")	Selects all <p> elements with class="intro"
+
+$("p:first")	Selects the first <p> element	
+
+$("ul li:first")	Selects the first <li> element of the first <ul>
+
+$("ul li:first-child")	Selects the first <li> element of every <ul>	
+
+$("[href]")	Selects all elements with an href attribute	
+
+$("a[target='_blank']")	Selects all <a> elements with a target attribute value equal to "_blank"	
+
+$("a[target!='_blank']")	Selects all <a> elements with a target attribute value NOT equal to "_blank"
+
+$(":button")	Selects all <button> elements and <input> elements of type="button"	
+
+$("tr:even")	Selects all even <tr> elements	
+  
+$("tr:odd")	Selects all odd <tr> elements -->
+  </body>
+</html>
