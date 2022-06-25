@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      //form events focus and blur
+      $(document).ready(function () {
+        $("input").focus(function () {
+          $(this).css("background-color", "blue");
+        });
+        $("input").blur(function () {
+          $(this).css("background-color", "red");
+        });
+      });
+    </script>
+
+    <title>jQuery Event Methods-form events</title>
+  </head>
+  <body>
+    <h1>jQuery events-form events</h1>
+    <!-- 1) focus() -form event
+          The focus() method attaches an event handler function to an HTML form field.
+          The function is executed when the form field gets focus: -->
+
+    <!-- 2 blur()-form event
+          The blur() method attaches an event handler function to an HTML form field.
+          The function is executed when the form field loses focus: -->
+    Name: <input type="text" name="name" /> Email:<input
+      type="text"
+      name="email"
+    />
+  </body>
+</html>

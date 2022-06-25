@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      // on()
+      $(document).ready(function () {
+        $("#on").on({
+          click: function () {
+            $(this).css("background-color", "yellow");
+          },
+          mouseenter: function () {
+            $(this).css("background-color", "lightgray");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "lightblue");
+          },
+        });
+      });
+    </script>
+    <title>jQuery on Methods</title>
+  </head>
+  <body>
+    <h1>on method</h1>
+    <!-- The on() Method
+       The on() method attaches one or more event handlers for the selected elements. -->
+    <p id="on">This is on para</p>
+  </body>
+</html>

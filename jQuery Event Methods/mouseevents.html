@@ -32,7 +32,19 @@
           alert("I am alerted after mouse leave");
         });
       });
+      //hover
+      $(document).ready(function () {
+        $("#hover").hover(
+          function () {
+            $(this).hide();
+          },
+          function () {
+            alert("I am hided");
+          }
+        );
+      });
     </script>
+
     <title>jQuery Event Methods</title>
   </head>
   <body>
@@ -45,10 +57,25 @@
     <!-- 2) dblclick -->
     <h3>Double Click me to hide</h3>
 
-    <!-- 4) mouseleave -->
+    <!-- 3) mouseleave -->
     <h4>Mouse Leave</h4>
 
-    <!-- 3) mouseenter -->
+    <!-- 4) mouseenter -->
     <p id="mouseenter">Mouse Enter</p>
+
+    <!-- 5) mousedown()- The mousedown() method attaches an 
+      event handler function to an HTML element.
+      The function is executed, when the left, middle or 
+      right mouse button is pressed down, while the mouse is over the HTML element: -->
+
+    <!-- 6) mouseup()- The mouseup() method attaches an event handler function to an HTML element.
+      The function is executed, when the left, middle or
+       right mouse button is released, while the mouse is over the HTML element: -->
+
+    <!-- 7) hover()  -The hover() method takes two functions and is a 
+        combination of the mouseenter() and mouseleave() methods.
+        The first function is executed when the mouse enters the HTML element,
+         and the second function is executed when the mouse leaves the HTML element: -->
+    <!-- <p id="hover">Paragraph to clear hover event</p> -->
   </body>
 </html>
