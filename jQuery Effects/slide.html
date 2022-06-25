@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      // slideDown
+      $(document).ready(function () {
+        $("#slidedown").click(function () {
+          $("#slidecontent").slideDown("slow");
+        });
+      });
+
+      //slideUp
+      $(document).ready(function () {
+        $("#slideup").click(function () {
+          $("#slidecontent2").slideUp("slow");
+        });
+      });
+
+      //slideToggle
+      $(document).ready(function () {
+        $("#slidetoggle").click(function () {
+          $("#slidecontent3").slideToggle("slow");
+        });
+      });
+    </script>
+    <style>
+      #slidedown,
+      #slidecontent2,
+      #slidecontent,
+      #slideup,
+      #slidetoggle,
+      #slidecontent3 {
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(0, 255, 217);
+        border: solid 1px rgb(78, 50, 205);
+      }
+
+      #slidecontent {
+        padding: 50px;
+        display: none;
+      }
+      #slidecontent2,
+      #slidecontent3 {
+        padding: 50px;
+      }
+    </style>
+    <title>jQuery Effects-slide</title>
+  </head>
+  <body>
+    <h1>JQuery Effect -slide</h1>
+    <!-- 1) The jQuery slideDown() method is used to slide down an element.-->
+    <h2 style="text-align: center">slideDown</h2>
+    <div id="slidedown">click to slide down content</div>
+    <div id="slidecontent">Hey Guys, I am lokesh jawale</div>
+
+    <br />
+    <br />
+    <!--2) The jQuery slideUp() method is used to slide up an element. -->
+    <h2 style="text-align: center">sideUp</h2>
+    <div id="slideup">click to slide Up content</div>
+    <div id="slidecontent2">Hey Guys, I am lokesh jawale</div>
+
+    <br />
+    <br />
+    <!-- 3) The jQuery slideToggle() method toggles between 
+      the slideDown() and slideUp() methods.
+      If the elements have been slid down, slideToggle() will slide them up.
+      If the elements have been slid up, slideToggle() will slide them down. -->
+    <h2 style="text-align: center">sideToggle</h2>
+    <div id="slidetoggle">click to slide Toggle content</div>
+    <div id="slidecontent3">Hey Guys, I am lokesh jawale</div>
+  </body>
+</html>

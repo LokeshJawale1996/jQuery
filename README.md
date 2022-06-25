@@ -8,3 +8,7 @@
 - [JQuery Events-on() method](./jQuery%20Event%20Methods/onmethod.html)
 
 <h2>jQuery Effects</h2>
+
+- [hide and show effect](./jQuery%20Effects/hideandshow.html)
+- [toggle effect](./jQuery%20Effects/toggle.html)
+- [slide effect](./jQuery%20Effects/slide.html)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#hideme").click(function () {
+          $("p").hide();
+        }),
+          $("#showme").click(function () {
+            $("p").show(1000); //here it is showing after 1 sec this is optional parametr(speed)
+            // The optional speed parameter specifies the speed
+            //of the hiding/showing, and can take the following values:
+            //"slow", "fast", or milliseconds.
+          });
+      });
+    </script>
+    <title>jQuery Effects-hide and show</title>
+  </head>
+  <body>
+    <h1>JQuery Effect -hide and show</h1>
+
+    <p>hide and show Effects</p>
+    <button id="hideme">Hide content</button>
+    <button id="showme">show content</button>
+  </body>
+</html>
