@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // Mouse Events-click
+      $(document).ready(function () {
+        $("h2").click(function () {
+          $(this).hide();
+        });
+      });
+
+      // Mouse Events-dblclick
+      $(document).ready(function () {
+        $("h3").dblclick(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+
+    <script>
+      // Mouse Events-mouseenter
+      $(document).ready(function () {
+        $("#mouseenter").mouseenter(function () {
+          alert("Hi Hero,I am lokesh Jawale");
+        });
+      });
+
+      // Mouse Events-mouseleave
+      $(document).ready(function () {
+        $("h4").mouseleave(function () {
+          alert("I am alerted after mouse leave");
+        });
+      });
+    </script>
+    <title>jQuery Event Methods</title>
+  </head>
+  <body>
+    <!-- Mouse Events -->
+    <h1>Mouse Events</h1>
+
+    <!-- 1) click -->
+    <h2>Click Event</h2>
+
+    <!-- 2) dblclick -->
+    <h3>Double Click me to hide</h3>
+
+    <!-- 4) mouseleave -->
+    <h4>Mouse Leave</h4>
+
+    <!-- 3) mouseenter -->
+    <p id="mouseenter">Mouse Enter</p>
+  </body>
+</html>
