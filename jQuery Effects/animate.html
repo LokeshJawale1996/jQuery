@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      //1)we can manipulate only one property left
+      // $(document).ready(function () {
+      //   $("button").click(function () {
+      //     $("div").animate({ left: "250px" });
+      //   });
+      // });
+
+      //2)we can also manipulate mutiple properties
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#animate").animate({
+            left: "250px",
+            opacity: "0.5",
+            height: "150px",
+            width: "150px",
+          });
+        });
+      });
+
+      //3) Using Relative Values
+
+      //It is also possible to define relative values
+      //(the value is then relative to the element's current value).
+      //This is done by putting += or -= in front of the value:
+      //ex:height: '+=150px',
+
+      //4) Using Pre-defined Values
+      // You can even specify a property's animation value as "show", "hide", or "toggle"
+      //ex:height: 'toggle'
+
+      //5) Uses Queue Functionality
+      //By default, jQuery comes with queue functionality for animations.
+      //This means that if you write multiple animate() calls after each other, jQuery creates an
+      //"internal" queue with these method calls. Then it runs the animate calls ONE by ONE.
+      // $(document).ready(function () {
+      //   $("#queue").click(function () {
+      //     var div = $("#queue-c");
+      //     div.animate({ height: "300px", opacity: "0.4" }, "slow");
+      //     div.animate({ width: "300px", opacity: "0.8" }, "slow");
+      //     div.animate({ height: "100px", opacity: "0.4" }, "slow");
+      //     div.animate({ width: "100px", opacity: "0.8" }, "slow");
+      //   });
+      // });
+    </script>
+    <title>jQuery Effects-animate</title>
+  </head>
+  <body>
+    <h1>JQuery Effect -animate</h1>
+    <p>I am Lokesh Here</p>
+    <p>Have a good day man</p>
+    <p>I am a frontend develoer just started my journey</p>
+    <button>animate content</button>
+    <div
+      id="animate"
+      style="
+        background: #98bf21;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      "
+    ></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- <h2>animate using queue</h2>
+    <button id="queue">animate-queue</button>
+    <div
+      id="queue-c"
+      style="
+        background: #98bf21;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      "
+    ></div> -->
+
+    <!-- Theory -->
+    <!-- The jQuery animate() method is used to create custom animations.
+
+Syntax:
+
+$(selector).animate({params},speed,callback);
+The required params parameter defines the CSS properties to be animated.
+
+The optional speed parameter specifies the duration of the effect.
+ It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the animation completes. -->
+  </body>
+</html>
