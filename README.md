@@ -9,9 +9,12 @@
 
 <h2>jQuery Effects</h2>
 
-- [hide() and show() effect](./jQuery%20Effects/hideandshow.html)
-- [toggle() effect](./jQuery%20Effects/toggle.html)
-- [slide effect](./jQuery%20Effects/slide.html)
-- [animate() effect](./jQuery%20Effects/animate.html)
-- [stop() effect](./jQuery%20Effects/stop.html)
-- [ callback function(param in effect)](./jQuery%20Effects/callback.html)
+- [jQuery hide() and show() effect](./jQuery%20Effects/hideandshow.html)
+- [jQuery toggle() effect](./jQuery%20Effects/toggle.html)
+- [jQuery slide effect](./jQuery%20Effects/slide.html)
+- [jQuery animate() effect](./jQuery%20Effects/animate.html)
+- [jQuery stop() effect](./jQuery%20Effects/stop.html)
+- [ jQuery callback function(param in effect)](./jQuery%20Effects/callback.html)
+- [jQuery chaining](./jQuery%20Effects/chaining.html)
+
+<h2>JQuery HTML</h2>
