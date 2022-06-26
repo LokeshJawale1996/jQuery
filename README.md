@@ -13,3 +13,5 @@
 - [toggle() effect](./jQuery%20Effects/toggle.html)
 - [slide effect](./jQuery%20Effects/slide.html)
 - [animate() effect](./jQuery%20Effects/animate.html)
+- [stop() effect](./jQuery%20Effects/stop.html)
+- [ callback function(param in effect)](./jQuery%20Effects/callback.html)

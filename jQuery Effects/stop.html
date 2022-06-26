@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#slidedown").click(function () {
+          $("#content").slideDown(5000);
+        });
+        $("#stop").click(function () {
+          $("#content").stop();
+        });
+      });
+    </script>
+    <style>
+      #slidedown,
+      #content {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: solid 1px #666;
+        border-radius: 3px;
+      }
+
+      #content {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+    <title>stop effect</title>
+  </head>
+  <body>
+    <!-- The jQuery stop() method is used to stop an animation or effect before it is finished -->
+    <button id="stop">Stop sliding</button>
+
+    <div id="slidedown">Click to slide down panel</div>
+    <div id="content">Hey Guys,I am Lokesh Jawale</div>
+  </body>
+</html>
