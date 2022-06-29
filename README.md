@@ -18,3 +18,6 @@
 - [jQuery chaining](./jQuery%20Effects/chaining.html)
 
 <h2>JQuery HTML</h2>
+
+- [jQuery set](./jQuery%20HTML/get.html)
+- [jQuery get](./jQuery%20HTML/set.html)

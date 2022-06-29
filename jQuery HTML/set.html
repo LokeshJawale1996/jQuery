@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#test1").text("Have a Good Day!");
+        });
+        $("#btn2").click(function () {
+          $("#test2").html("<h2>Have a Good Day</h2>");
+        });
+        $("#btn3").click(function () {
+          $("#test3").val("Mango");
+        });
+      });
+    </script>
+
+    <title>jQuery - Set Content and Attributes</title>
+  </head>
+  <body>
+    <h1>jQuery - Set Content and Attributes</h1>
+    <!-- text() - Sets or returns the text content of selected elements
+     html() - Sets or returns the content of selected elements (including HTML markup)
+     val() - Sets or returns the value of form fields
+     The following example demonstrates how to set content with the jQuery text(), html(), and val() methods: -->
+
+    <p id="test1">Hello Boys and Girls.</p>
+    <p id="test2">I am Lokesh Jawale</p>
+
+    <p>Input field: <input type="text" id="test3" value="Apple" /></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+  </body>
+</html>
