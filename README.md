@@ -19,5 +19,6 @@
 
 <h2>JQuery HTML</h2>
 
-- [jQuery set](./jQuery%20HTML/get.html)
-- [jQuery get](./jQuery%20HTML/set.html)
+- [jQuery getContent](./jQuery%20HTML/get.html)
+- [jQuery setContent](./jQuery%20HTML/set.html)
+- [jQuery addContent](./jQuery%20HTML/addContent.html)

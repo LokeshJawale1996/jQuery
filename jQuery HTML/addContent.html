@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").append(" <b>Appended text</b>.");
+        });
+
+        $("#btn2").click(function () {
+          $("ol").append("<li>Appended item</li>");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btn3").click(function () {
+          $("p").prepend("<b>Prepended text</b>. ");
+        });
+        $("#btn4").click(function () {
+          $("ol").prepend("<li>Prepended item</li>");
+        });
+      });
+    </script>
+    <script>
+      function appendText() {
+        var txt1 = "<p>Hi Guys.</p>"; // Create text with HTML
+        var txt2 = $("<p></p>").text("Have a Good day."); // Create text with jQuery
+        var txt3 = document.createElement("p");
+        txt3.innerHTML = "I am Lokesh Jawale."; // Create text with DOM
+        $("body").append(txt1, txt2, txt3); // Append new elements
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#btn5").click(function () {
+          $("img").before("<b>Before</b>");
+        });
+
+        $("#btn6").click(function () {
+          $("img").after("<i>After</i>");
+        });
+      });
+    </script>
+    <title>jQuery - Add Elements</title>
+  </head>
+  <body>
+    <h1>jQuery - Add Elements</h1>
+    <!-- Add New HTML Content
+We will look at four jQuery methods that are used to add new content:
+
+append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() - Inserts content before the selected elements -->
+
+    <p>Hi guys.</p>
+    <p>Lokesh Here.</p>
+
+    <ol>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+    </ol>
+
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list items</button>
+    <button id="btn3">Prepend text</button>
+    <button id="btn4">Prepend list item</button>
+
+    <!-- In the following example, we create several new elements. The elements are created with text/HTML,
+     jQuery, and JavaScript/DOM. Then we append the new elements to the text with the append() method 
+     (this would have worked for prepend() too) :
+ -->
+    <br />
+    <br />
+    <button id="databtn" onclick="appendText()">Append data</button>
+
+    <br />
+    <br />
+    <img
+      src="/images/w3jquery.gif"
+      alt="jQuery"
+      width="100"
+      height="140"
+    /><br /><br />
+
+    <button id="btn5">Insert before</button>
+    <button id="btn6">Insert after</button>
+  </body>
+</html>
