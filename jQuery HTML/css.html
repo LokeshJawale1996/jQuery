@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery - css() Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $("ol").ready(function () {
+        $("li").click(function () {
+          $(this).css("background-color", "yellow");
+          // $("li").css("background-color", "green");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").css({ "background-color": "yellow", "font-size": "200%" });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery css() Method</h1>
+    The css() method sets or returns one or more style properties for the
+    selected elements.
+
+    <ol>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+    </ol>
+
+    <!-- Set Multiple CSS Properties
+To set multiple CSS properties, use the following syntax:
+
+css({"propertyname":"value","propertyname":"value",...}); -->
+
+    <p style="background-color: #ff0000">Hi lokesh Jawale here.</p>
+    <button>Set multiple styles for p</button>
+  </body>
+</html>
