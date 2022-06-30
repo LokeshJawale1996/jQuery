@@ -22,3 +22,4 @@
 - [jQuery getContent](./jQuery%20HTML/get.html)
 - [jQuery setContent](./jQuery%20HTML/set.html)
 - [jQuery addContent](./jQuery%20HTML/addContent.html)
+- [jQuery removeContent](./jQuery%20HTML/removeContent.html)
