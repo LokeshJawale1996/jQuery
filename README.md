@@ -25,3 +25,8 @@
 - [jQuery removeContent](./jQuery%20HTML/removeContent.html)
 - [jQuery css()](./jQuery%20HTML/css.html)
 - [jQuery css Classes](./jQuery%20HTML/cssClasses.html)
+- [jQuery diamentions](./jQuery%20HTML/diamentions.html)
+
+<h2>JQuery Traversing</h2>
+
+- [jQuery ancestors](./jQuery%20Traversing/ancestors.html)
