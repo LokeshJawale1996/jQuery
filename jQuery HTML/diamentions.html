@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>jQuery - Dimensions</title>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var txt = "";
+          txt += "Width of div: " + $("#div1").width() + "</br>";
+          txt += "Height of div: " + $("#div1").height() + "</br>";
+          txt += "innerWidth of div: " + $("#div1").innerWidth() + "</br>";
+          txt += "innerHeight of div: " + $("#div1").innerHeight() + "</br>";
+          txt += "outerWidth of div: " + $("#div1").outerWidth() + "</br>";
+          txt += "outerHeight of div: " + $("#div1").outerHeight() + "</br>";
+          txt +=
+            "Outer width of div (margin included): " +
+            $("#div1").outerWidth(true) +
+            "</br>";
+          txt +=
+            "Outer height of div (margin included): " +
+            $("#div1").outerHeight(true);
+
+          $("#div1").html(txt);
+        });
+      });
+    </script>
+    <style>
+      #div1 {
+        height: 200px;
+        width: 500px;
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid blue;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery - Dimensions</h1>
+    <h2>
+      With jQuery, it is easy to work with the dimensions of elements and
+      browser window.
+    </h2>
+    <!-- jQuery has several important methods for working with dimensions:
+
+       width()
+       height()
+       innerWidth()
+       innerHeight()
+       outerWidth()
+       outerHeight() -->
+
+    <div id="div1"></div>
+    <br />
+
+    <button>Display dimensions of div</button>
+
+    <p>width() - returns the width of an element.</p>
+    <p>height() - returns the height of an element.</p>
+    <p>innerWidth() - returns the width of an element (includes padding).</p>
+    <p>innerHeight() - returns the height of an element (includes padding).</p>
+    <p>
+      outerWidth() - returns the width of an element (includes padding and
+      border).
+    </p>
+    <p>
+      outerHeight() - returns the height of an element (includes padding and
+      border).
+    </p>
+    <p>
+      outerWidth(true) - returns the width of an element (includes padding,
+      border, and margin).
+    </p>
+    <p>
+      outerHeight(true) - returns the height of an element (includes padding,
+      border, and margin).
+    </p>
+  </body>
+</html>
