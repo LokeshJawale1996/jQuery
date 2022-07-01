@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Traversing - Descendants</title>
+    <style>
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div").children().css({ color: "green", border: "2px solid purple" });
+      });
+
+      // $(document).ready(function () {
+      //   $("div")
+      //     .children("p:first")
+      //     .css({ color: "green", border: "2px solid purple" });
+
+      // });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("div").find("span").css({ color: "red", border: "2px solid red" });
+      });
+      //find("*") selects all descendants
+    </script>
+  </head>
+  <body>
+    <!-- With jQuery you can traverse down the DOM tree to find descendants of an element.
+
+A descendant is a child, grandchild, great-grandchild, and so on.
+
+Traversing Down the DOM Tree
+Two useful jQuery methods for traversing down the DOM tree are:
+
+children()
+find() -->
+
+    <!-- jQuery children() Method
+The children() method returns all direct children of the selected element.
+
+This method only traverses a single level down the DOM tree. -->
+
+    <div class="descendants" style="width: 500px">
+      div (current element)
+      <p class="first">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p class="second">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
+
+    <!-- jQuery find() Method
+    The find() method returns descendant elements of the selected element, 
+    all the way down to the last descendant. -->
+  </body>
+</html>

@@ -30,3 +30,4 @@
 <h2>JQuery Traversing</h2>
 
 - [jQuery ancestors](./jQuery%20Traversing/ancestors.html)
+- [jQuery descendants](./jQuery%20Traversing/descendants.html)
