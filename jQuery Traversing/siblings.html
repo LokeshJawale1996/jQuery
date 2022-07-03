@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Traversing - Siblings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .siblings * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <!-- <script>
+      $(document).ready(function () {
+        $("h2").siblings().css({ color: "red", border: "2px solid red" });
+      });
+    </script> -->
+    <script>
+      // You can also use an optional parameter to filter the search for siblings.
+
+      $(document).ready(function () {
+        $("h2").siblings("p").css({ color: "red", border: "2px solid red" });
+      });
+    </script>
+  </head>
+  <body class="siblings">
+    <h1>jQuery Traversing - Siblings</h1>
+    <!-- With jQuery you can traverse sideways in the DOM tree to find siblings of an element. -->
+    <!-- Traversing Sideways in The DOM Tree
+There are many useful jQuery methods for traversing sideways in the DOM tree:
+
+siblings()
+next()
+nextAll()
+nextUntil()
+prev()
+prevAll()
+prevUntil()
+
+jQuery siblings() Method
+The siblings() method returns all sibling elements of the selected element. -->
+
+    <div>
+      div (parent)
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <p>p</p>
+    </div>
+
+    <!-- Notes 1)jQuery next() Method The next() method returns the next sibling
+    element of the selected element jQuery 
+    
+    2)nextAll() Method The nextAll()
+    method returns all next sibling elements of the selected element.
+
+
+    3)jQuerynextUntil() Method The nextUntil() method returns all next sibling
+    elements between two given arguments. 
+    
+    4)jQuery prev(), prevAll() &
+    prevUntil() Methods The prev(), prevAll() and prevUntil() methods work just
+    like the methods above but with reverse functionality: they return previous
+    sibling elements (traverse backwards along sibling elements in the DOM tree,
+    instead of forward). -->
+  </body>
+</html>
