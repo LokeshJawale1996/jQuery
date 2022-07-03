@@ -31,3 +31,5 @@
 
 - [jQuery ancestors](./jQuery%20Traversing/ancestors.html)
 - [jQuery descendants](./jQuery%20Traversing/descendants.html)
+- [jQuery Siblings](./jQuery%20Traversing/siblings.html)
+- [jQuery filtering](./jQuery%20Traversing/filtering.html)
